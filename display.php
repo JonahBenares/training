@@ -16,6 +16,7 @@
 		<td>Company</td>
 		<td>Address</td>
 		<td>Phone #</td>
+		<td></td>
 	</tr>
 	<?php while($fetch = $sql->fetch_array()){ ?>
 		<tr>
@@ -26,6 +27,8 @@
 			<td></td>
 			<td></td>
 			<td></td>
+			<td><a href="update.php?id=<?php echo $fetch['employee_id']; ?>">[Edit]</a>
+				<a href="delete.php?id=<?php echo $fetch['employee_id']; ?>">[Delete]</a></td>
 		</tr>
 	<?php } ?>
 </table>

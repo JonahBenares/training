@@ -19,7 +19,6 @@
 
 ?>
 
-
 <form method="POST">
 	<table >
 		<tr>
