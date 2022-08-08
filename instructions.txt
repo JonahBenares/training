@@ -1,0 +1,11 @@
+Instructions: 
+- Do not open the cheat sheet.
+- Google is allowed.
+- It's okay if no design yet, focus on functionality.
+
+1. We will make an Enrollment System.
+2. Create a database wherein students data will be saved. The following fields are: student_id, firstname, middlename, lastname, address, phone_no, year_level, hs_graduated, hs_year_graduated.
+3. Functionalities should include displaying of all students enrolled, registration of new students, editing students data and deleting students data.
+
+
+
