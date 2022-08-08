@@ -1,14 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "db_training";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $db = "db_enrollment";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $db);
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $db);
 
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  // echo "Connected successfully";
 ?>
