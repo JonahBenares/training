@@ -1,18 +1,26 @@
 <?php
 session_start();
-	include("connection.php");
+	include("enrollment_system/connection.php");
 
 	if(isset($_POST['login'])){
 
 		$uname = $_POST['username'];
 		$pw= md5($_POST['password']);
-		echo "SELECT * FROM students where username = '$uname' AND password = '$pw'";
-		$result = $conn->query("SELECT * FROM students where username = '$uname' AND password = '$pw'");
-		$rows = $result->num_rows;
 		
-		echo $rows;
+		$sql = $conn->query("SELECT * FROM students where username = '$uname' AND password = '$pw'");
+		$rows = $sql->num_rows;
+		if($rows>0){
+			$sql2 = $conn->query("SELECT * FROM students where username = '$uname' AND password = '$pw'");
+			$fetch = $sql2->fetch_array();
+
+			$_SESSION['id']=$fetch['student_id'];
+			$_SESSION['fullname']=$fetch['firstname'] . " " . $fetch['lastname'];
+			
+
+		}
 		
 	}
+
 
 ?>
 
