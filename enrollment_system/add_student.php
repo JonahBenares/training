@@ -1,10 +1,12 @@
 <?php
 	include("connection.php");
+  	include("index.php");
 
 	if(isset($_POST['add_student'])){
 		$insert = $conn->query("INSERT INTO students (lastname, firstname, middlename, address, phone_no, year_level, hs_graduated, hs_year_graduated) VALUES ('$_POST[lastname]', '$_POST[firstname]', '$_POST[middlename]', '$_POST[address]','$_POST[phone_no]','$_POST[year_level]','$_POST[hs_graduated]','$_POST[hs_year_graduated]')");
 		if($insert){
-			echo "Successfully saved!";
+			echo "<script>alert('Succesfully Added'); </script>";
+			echo "<script>document.location='list_student.php'</script>";
 		} else {
 			echo "Error";
 		}
@@ -15,7 +17,7 @@
 	<table border="1">
 		<thead>
 			<tr>
-				<td colspan='2'><center>ADD NEW STUDENT</center></td>
+				<td colspan='2'><center>Add Student</center></td>
 			</tr>
 		</thead>
 		<tr>
@@ -51,7 +53,7 @@
 	    	<td><input type="text" name="hs_year_graduated"></td>
 	    </tr>
 	    <tr>
-	    	<td colspan='2'><center><input type="submit" name="add_student" value="ADD NEW STUDENT"></center></td>
+	    	<td colspan='2'><center><input type="submit" name="add_student" value="Add Student"></center></td>
 	    </tr>
 	</table>
 </form>

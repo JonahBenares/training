@@ -17,8 +17,8 @@
 		hs_year_graduated='$_POST[hs_year_graduated]' WHERE student_id='$id'");
 //checker output
 		if($sql){
-			
-			echo "Successfully Edited!";
+			echo "<script>alert('Succesfully Edited'); </script>";
+			echo "<script>document.location='list_student.php'</script>";
 		} else {
 			echo "error";
 		}
@@ -61,16 +61,8 @@
 			<td><input type="text" name="hs_year_graduated" value="<?php echo (empty($id) ? '' : $fetch['hs_year_graduated']); ?>"></td>
 		</tr>
 		<tr>
-			<td colspan='2'><center><input type="submit" name="edit_student" value="Edit student"></center></td>
+			<td colspan='2'><center><input type="submit" name="edit_student" value="Edit Student"></center></td>
 		</tr>
 	</table>
-	<!-- shortcut way -->
 	<input type='hidden' name='id' value="<?php echo (empty($id) ? '' : $id); ?>">
-	<!-- <input type='hidden' name='id' value="<?php 
-		if (empty($id)){
-			echo '';
-		} else {
-			echo "$id";
-		}
-	?>"> -->
 </form>
