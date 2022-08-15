@@ -1,0 +1,115 @@
+body{
+	background: #f0f3f7;
+	margin: 0px;
+}
+.nav{
+	height: 35px;
+	background: #fff;
+	background-image: linear-gradient(to right, #f7f7f7 , #fff);
+	padding: 20px;
+	/*text-align: center;*/
+	box-shadow: -6px 2px 7px 0px #aeaeae7d;
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+}
+.nav-buttons{
+	text-decoration: none;
+	font-weight: 600;
+	font-family: sans-serif;
+	color: #000;
+	padding: 10px;
+}
+
+.nav-buttons:hover{
+	text-decoration: none;
+	padding: 10px;
+	font-weight: 600;
+	font-family: sans-serif;
+	color: #fff;
+	background: #aeaeae;
+}
+.padding-top{
+	padding-top: 10px;
+}
+.padding-right{
+	padding-right: 50px;
+}
+.column{
+	width: 33.33%;
+}
+.row{
+	display: flex;
+}
+
+#henne{
+	color: blue;
+}
+
+.button-upgrade{
+	background: #2d78e0;
+	color: #fff;
+	text-decoration: none;
+	font-family: sans-serif;
+	padding: 7px;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.button-upgrade:hover{
+	background: #69a2f0;
+	color: #fff;
+	text-decoration: none;
+	font-family: sans-serif;
+	padding: 7px;
+	font-size: 13px;
+	border-radius: 5px;
+	box-shadow: -6px 2px 7px 0px #aeaeae7d;
+}
+
+.pull-right{
+	right: 0;
+	position: absolute;
+}
+
+.logo{
+	width: 30px;
+	position: absolute;
+
+}
+
+
+section.banner{
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+
+	background-image: url('../images/banner.png');
+	background-repeat: no-repeat;
+	background-size: 110% ;
+	height: 100vh;
+}
+
+.button{
+	padding: 10px;
+	border: 0px;
+	border-radius: 5px;
+}
+.btn-primary{
+	background: blue;
+	color: #fff;
+}
+.btn-success{
+	background: green;
+	color: yellow;
+}
+.btn-danger{
+	background: red;
+	color: #fff;
+}
+.btn-warning{
+	background: yellow;
+	color: #fff;
+}
+
+.overlay
